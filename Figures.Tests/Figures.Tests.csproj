@@ -21,7 +21,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Figures\Figures.csproj" />
+      <ProjectReference Include="..\Figures.Base\Figures.Base.csproj" />
+      <ProjectReference Include="..\Figures.Core\Figures.Core.csproj" />
     </ItemGroup>
 
 </Project>
