@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Figures.Base.Triangle;
+using Xunit;
 
 namespace Figures.Tests;
 
@@ -7,17 +8,16 @@ public class IsRightTest
     [Fact]
     public void Test()
     {
-        Assert.True(new Triangle(5,4,3).IsRight);
-        Assert.True(new Triangle(5,3,4).IsRight);
-        Assert.True(new Triangle(4,5,3).IsRight);
-        Assert.True(new Triangle(4,3,5).IsRight);
-        Assert.True(new Triangle(3,5,4).IsRight);
-        Assert.True(new Triangle(3,4,5).IsRight);
+        Assert.True(new DoubleTriangle(5,4,3).IsRectangular);
+        Assert.True(new DoubleTriangle(5,3,4).IsRectangular);
+        Assert.True(new DoubleTriangle(4,5,3).IsRectangular);
+        Assert.True(new DoubleTriangle(4,3,5).IsRectangular);
+        Assert.True(new DoubleTriangle(3,5,4).IsRectangular);
+        Assert.True(new DoubleTriangle(3,4,5).IsRectangular);
         
-        Assert.False(new Triangle(2,2,1).IsRight);
-        Assert.False(new Triangle(2,1,2).IsRight);
-        Assert.False(new Triangle(1,2,2).IsRight);
-        Assert.False(new Triangle(1,1,1).IsRight);
-
+        Assert.False(new DoubleTriangle(2,2,1).IsRectangular);
+        Assert.False(new DoubleTriangle(2,1,2).IsRectangular);
+        Assert.False(new DoubleTriangle(1,2,2).IsRectangular);
+        Assert.False(new DoubleTriangle(1,1,1).IsRectangular);
     }
 }
